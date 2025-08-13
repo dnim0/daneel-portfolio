@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/daneel-portfolio/static/css/main.34650050.css",
+    "main.js": "/daneel-portfolio/static/js/main.bd16507f.js",
+    "static/js/453.5b8f5de5.chunk.js": "/daneel-portfolio/static/js/453.5b8f5de5.chunk.js",
+    "static/media/daneel-headshot.jpg": "/daneel-portfolio/static/media/daneel-headshot.69da79b24d8a49a77613.jpg",
+    "static/media/bg-light.png": "/daneel-portfolio/static/media/bg-light.799a699c33c6b152bf34.png",
+    "static/media/bg-dark.png": "/daneel-portfolio/static/media/bg-dark.077c3f1b74346f1f5447.png",
+    "static/media/mock10.png": "/daneel-portfolio/static/media/mock10.2d05b02ba569a430a255.png",
+    "static/media/mock09.png": "/daneel-portfolio/static/media/mock09.e18677ccfc932e52d754.png",
+    "static/media/mock08.png": "/daneel-portfolio/static/media/mock08.13f46873fdbd382f4b76.png",
+    "static/media/mock04.png": "/daneel-portfolio/static/media/mock04.f7b5679efade992a078c.png",
+    "static/media/mock07.png": "/daneel-portfolio/static/media/mock07.3f1110f482232b33c6a2.png",
+    "static/media/mock05.png": "/daneel-portfolio/static/media/mock05.4faafa70d200d1519a34.png",
+    "static/media/mock06.png": "/daneel-portfolio/static/media/mock06.ea816617e0d0fa0f63ca.png",
+    "static/media/mock01.png": "/daneel-portfolio/static/media/mock01.61bd486a54bf6e17ee5a.png",
+    "static/media/mock02.png": "/daneel-portfolio/static/media/mock02.bced48ae9cdda3acf1a3.png",
+    "static/media/mock03.png": "/daneel-portfolio/static/media/mock03.a4600719e0b5d2a3155b.png",
+    "index.html": "/daneel-portfolio/index.html",
+    "main.34650050.css.map": "/daneel-portfolio/static/css/main.34650050.css.map",
+    "main.bd16507f.js.map": "/daneel-portfolio/static/js/main.bd16507f.js.map",
+    "453.5b8f5de5.chunk.js.map": "/daneel-portfolio/static/js/453.5b8f5de5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34650050.css",
+    "static/js/main.bd16507f.js"
+  ]
+}
