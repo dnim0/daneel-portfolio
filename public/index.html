@@ -16,6 +16,29 @@
     <meta name="theme-color" content="#0b0f19" />
     <meta name="description" content="My personal portfolio website." />
 
+    <!-- Google tag (GA4) — loads only on your live domain -->
+    <script>
+      (function () {
+        if (location.hostname !== 'dnim0.github.io') return; // don't track on localhost, etc.
+
+        var GA_ID = 'G-SH0RVC8ZL6';
+
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', GA_ID, {
+          page_path: location.pathname + location.search
+        });
+      })();
+    </script>
+
     <title>Daneel Nizamov</title>
   </head>
   <body>
