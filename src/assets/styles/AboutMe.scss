@@ -1,0 +1,68 @@
+.about-me-section {
+  padding: 60px 15%;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 0;
+
+    li {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        font-size: 1.4em;
+        line-height: 1;
+        transition: color 0.5s ease;
+      }
+    }
+  }
+}
+
+/* Dark Mode Styling — matches Expertise background */
+.dark-mode .about-me-section {
+  background-color: #0d1116; /* Same as main-container dark mode */
+  color: #f5f5f5;
+
+  h1 {
+    color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  ul li::before {
+    color: #9b6e50; //
+  }
+}
+
+/* Light Mode Styling — matches Expertise background */
+.light-mode .about-me-section {
+  background-color: #f8f9fa; /* Same as main-container light mode */
+  color: #0d1116;
+
+  h1 {
+    color: #0d1116;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  }
+
+  ul li::before {
+    color: #9b6e50; // 
+  }
+}
