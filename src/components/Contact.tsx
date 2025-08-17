@@ -80,7 +80,7 @@ function Contact() {
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>ontact Me</h1>
+          <h1>Contact Me</h1>
           <p>
             Ready to transform your business with AI? Let's get in touch and discuss
             how I can help achieve your goals.
