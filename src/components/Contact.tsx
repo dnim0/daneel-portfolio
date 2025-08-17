@@ -30,10 +30,10 @@ function Contact() {
 
   const form = useRef<HTMLFormElement | null>(null);
 
-  // EmailJS creds (works now; later you can move to .env.local)
+  // EmailJS creds 
   const SERVICE_ID = 'service_daneel';
   const TEMPLATE_ID = 'template_n6nfcgw';
-  const PUBLIC_KEY  = 'Ydvr9RbpEBvtcjx6Q';
+  const PUBLIC_KEY  = 'aZ_OPPciPGBCxPWgj';
 
   const isValid = name.trim() !== '' && email.trim() !== '' && message.trim() !== '';
 
@@ -80,7 +80,7 @@ function Contact() {
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>Contact Me</h1>
+          <h1>ontact Me</h1>
           <p>
             Ready to transform your business with AI? Let's get in touch and discuss
             how I can help achieve your goals.
