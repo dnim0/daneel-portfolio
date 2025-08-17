@@ -1,85 +1,96 @@
-.skills-container {
-    padding: 5% 10%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
 
-    svg {
-        color: white;
-    }
+#expertise {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Light Mode — align with AboutMe/Timeline light backgrounds */
+.light-mode #expertise {
+  background-color: #f8f9fa; /* same light surface as other sections */
+  color: #0d1116;
+
+  .skills-container svg { color: #0d1116; }
+  .flex-chips .chip-title { color: #0d1116; }
+}
+
+/* Dark Mode — inherit or match site dark surface */
+.dark-mode #expertise {
+  /* If your main container already paints dark, keep this transparent; otherwise use #0d1116 */
+  background-color: transparent;
+  color: #f5f5f5;
+
+  .skills-container svg { color: #ffffff; }
+  .flex-chips .chip-title { color: #ffffff; }
+}
+
+/* Existing styles (from your file), kept intact below */
+.skills-container {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  svg { color: white; }
 }
   
 .skills-container .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
 }
   
 .skills-container .skills-grid .skill {
-    align-items: center;
-    text-align: left;
+  align-items: center;
+  text-align: left;
 }
   
 .chip {
-    color: rgb(39, 40, 34) !important;
-    background-color: white !important;
-    font-size: 0.8rem !important;
-    height: 25px !important;
+  color: rgb(39, 40, 34) !important;
+  background-color: white !important;
+  font-size: 0.8rem !important;
+  height: 25px !important;
   
-    span {
-        font-family: 'Courier Prime', monospace;
-        color: rgb(39, 40, 34);
-    }
+  span {
+    font-family: 'Courier Prime', monospace;
+    color: rgb(39, 40, 34);
+  }
   
-    svg {
-        height: 15px !important;
-    }
+  svg { height: 15px !important; }
 }
 
 .flex-chips {
-    line-height: 2;
-    margin: 0.5;
+  line-height: 2;
+  margin: 0.5;
 
-    .chip-title {
-        color: white;
-        padding-right: 10px;
-    }
+  .chip-title {
+    color: white; /* overridden per mode above */
+    padding-right: 10px;
+  }
 }
 
-.flex-chips .MuiChip-root {
-    margin-right: 0.5em;
-}
+.flex-chips .MuiChip-root { margin-right: 0.5em; }
 
 .flex-chips .MuiChip-outlined {
-    background-color: #e0e0e0;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+  background-color: #e0e0e0;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-.flex-chips .MuiChip-outlined span {
-    color: rgb(39, 40, 34);
-}
+.flex-chips .MuiChip-outlined span { color: rgb(39, 40, 34); }
 
 @media screen {
-    @media (max-width: 768px) {
-        .skills-container {
-            display: block;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
+  @media (max-width: 768px) {
+    .skills-container {
+      display: block;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .skills-container .skills-grid { display: initial; }
     
-        .skills-container .skills-grid {
-            display: initial;
-        }
-        
-        .skills-container .skills-grid .skill {
-            padding-bottom: 5%;
-        }
-    }
+    .skills-container .skills-grid .skill { padding-bottom: 5%; }
+  }
 
-    @media (max-width: 567px) {
-        .skills {
-            font-size: 12px;
-        }
-    }
+  @media (max-width: 567px) {
+    .skills { font-size: 12px; }
+  }
 }
