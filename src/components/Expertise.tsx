@@ -7,7 +7,7 @@ import "../assets/styles/Expertise.scss";
 
 /**
  * Expertise section tailored for an AI business automation developer & financial analyst.
- * Uses existing styles; no SCSS changes required.
+ * Change: no structural changes required; background will be controlled purely via SCSS overrides.
  */
 
 const labelsAutomation = [
@@ -55,7 +55,6 @@ function Expertise(): JSX.Element {
         <div className="skills-grid">
           {/* Business Process Automation & CRM */}
           <div className="skill">
-            {/* Using solid icon for clearer semantics */}
             <FontAwesomeIcon icon={faCogs} size="3x" title="Automation & CRM" />
             <h3>Business Process Automation &amp; CRM</h3>
             <p>
@@ -76,10 +75,10 @@ function Expertise(): JSX.Element {
             <FontAwesomeIcon icon={faChartLine} size="3x" title="Financial Analysis & Reporting" />
             <h3>Financial Analysis &amp; Reporting</h3>
             <p>
-                  I support monthly, quarterly, and year-end closes with meticulous account reconciliations 
-                  and bookkeeping for clients across industries. From daily transaction tracking to full-cycle 
-                  financial statements, I deliver accurate, GAAP/IFRS-compliant reports. My work blends budgeting, 
-                  forecasting, and variance analysis with repeatable reporting flows in Excel, Power BI, Dynamics 365, and QuickBooks.
+              I support monthly, quarterly, and year-end closes with meticulous account reconciliations 
+              and bookkeeping for clients across industries. From daily transaction tracking to full-cycle 
+              financial statements, I deliver accurate, GAAP/IFRS-compliant reports. My work blends budgeting, 
+              forecasting, and variance analysis with repeatable reporting flows in Excel, Power BI, Dynamics 365, and QuickBooks.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tooling:</span>
