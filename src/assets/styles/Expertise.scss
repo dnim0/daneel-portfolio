@@ -1,4 +1,9 @@
+/* src/assets/styles/Expertise.scss
+   Goal: Make Expertise section background match other sections in both light and dark modes.
+   Approach: Add mode-aware wrappers targeting #expertise, adjust icon/text colors for contrast.
+*/
 
+/* Smooth theme transitions */
 #expertise {
   transition: background-color 0.5s ease, color 0.5s ease;
 }

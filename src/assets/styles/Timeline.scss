@@ -1,38 +1,75 @@
+/* src/assets/styles/Timeline.scss
+   Goal: Make Timeline section background and cards match the rest of the site,
+   mirroring the Expertise rules (light/dark), and improve contrast on the line, arrows, and dates.
+*/
+
 .timeline-section {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Light Mode */
+/* Light Mode — align with other sections (same surface used in Expertise) */
 .light-mode .timeline-section {
-  background-color: #ffffff;
+  background-color: #f8f9fa; /* why: match site light surface */
   color: #0d1116;
 }
+.light-mode .timeline-section h1 { color: #0d1116; }
 
-.light-mode .timeline-section h1 {
-  color: #0d1116;
-}
-
-/* Dark Mode */
+/* Dark Mode — let the parent dark surface show through */
 .dark-mode .timeline-section {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent; /* or #0d1116 if you prefer a solid block */
   color: #f5f5f5;
 }
+.dark-mode .timeline-section h1 { color: #ffffff; }
 
-.dark-mode .timeline-section h1 {
-  color: #ffffff;
-}
+/* Vertical line color (center spine) */
+.light-mode .timeline-section .vertical-timeline::before { background: #dee2e6; }
+.dark-mode  .timeline-section .vertical-timeline::before { background: rgba(255, 255, 255, 0.2); }
 
 /* Card Content Styling */
 .timeline-card .vertical-timeline-element-content {
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+  border: 1px solid transparent;
 }
 
 .light-mode .timeline-card .vertical-timeline-element-content {
-  background: white;
+  background: #ffffff;
   color: rgb(39, 40, 34);
+  border-color: #e9ecef;
+  box-shadow: 0 6px 24px rgba(16, 24, 40, 0.08);
 }
-
 .dark-mode .timeline-card .vertical-timeline-element-content {
   background: rgba(255, 255, 255, 0.05);
   color: #f5f5f5;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+/* Arrow that points to the line */
+.timeline-card .vertical-timeline-element-content-arrow {
+  transition: border-color 0.5s ease;
+}
+.light-mode .timeline-card .vertical-timeline-element-content-arrow {
+  border-left: 7px solid #ffffff !important; /* library sets left-facing arrow */
+}
+.dark-mode .timeline-card .vertical-timeline-element-content-arrow {
+  border-left: 7px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Date text */
+.timeline-card .vertical-timeline-element-date { opacity: 0.85; }
+.light-mode .timeline-card .vertical-timeline-element-date { color: #5a6777; }
+.dark-mode  .timeline-card .vertical-timeline-element-date { color: #d0d5dd; }
+
+/* Spacing tweaks for container (optional) */
+.timeline-section .items-container {
+  padding: clamp(2rem, 4vw, 4rem) 10%;
+}
+
+/* Headings inside cards */
+.timeline-card h3.vertical-timeline-element-title {
+  margin-top: 0;
+}
+.timeline-card h4.vertical-timeline-element-subtitle {
+  margin-top: .25rem;
+  opacity: .9;
 }
