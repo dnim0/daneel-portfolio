@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/daneel-portfolio/static/css/main.34650050.css",
-    "main.js": "/daneel-portfolio/static/js/main.bd16507f.js",
+    "main.css": "/daneel-portfolio/static/css/main.28ab1d6c.css",
+    "main.js": "/daneel-portfolio/static/js/main.b4f3a0d3.js",
     "static/js/453.5b8f5de5.chunk.js": "/daneel-portfolio/static/js/453.5b8f5de5.chunk.js",
     "static/media/daneel-headshot.jpg": "/daneel-portfolio/static/media/daneel-headshot.69da79b24d8a49a77613.jpg",
     "static/media/bg-light.png": "/daneel-portfolio/static/media/bg-light.799a699c33c6b152bf34.png",
@@ -17,12 +17,12 @@
     "static/media/mock02.png": "/daneel-portfolio/static/media/mock02.bced48ae9cdda3acf1a3.png",
     "static/media/mock03.png": "/daneel-portfolio/static/media/mock03.a4600719e0b5d2a3155b.png",
     "index.html": "/daneel-portfolio/index.html",
-    "main.34650050.css.map": "/daneel-portfolio/static/css/main.34650050.css.map",
-    "main.bd16507f.js.map": "/daneel-portfolio/static/js/main.bd16507f.js.map",
+    "main.28ab1d6c.css.map": "/daneel-portfolio/static/css/main.28ab1d6c.css.map",
+    "main.b4f3a0d3.js.map": "/daneel-portfolio/static/js/main.b4f3a0d3.js.map",
     "453.5b8f5de5.chunk.js.map": "/daneel-portfolio/static/js/453.5b8f5de5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34650050.css",
-    "static/js/main.bd16507f.js"
+    "static/css/main.28ab1d6c.css",
+    "static/js/main.b4f3a0d3.js"
   ]
 }
